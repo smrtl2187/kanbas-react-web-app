@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Course Details</title>
+    <style>
+        td {
+            vertical-align: top;
+        }
+    </style>
+</head>
+
+<body>
+    <table border="0" width="100%">
+        <tbody>
+            <tr>
+                <td>
+                    <ul>
+                        <li><a href="/kanbas/profile/index.html">Account</a></li>
+                        <li><a href="#">Dashboard</a></li>
+                        <li><a href="/kanbas/home.html">Courses</a></li>
+                        <li><a href="#">Calendar</a></li>
+                        <li><a href="#">Inbox</a></li>
+                        <li><a href="#">History</a></li>
+                        <li><a href="#">Studio</a></li>
+                        <li><a href="#">Commons</a></li>
+                        <li><a href="#">Help</a></li>
+                    </ul>
+                </td>
+                <td>
+                    <ul>
+                        <li><a href="/kanbas/home.html">Home</a></li>
+                        <li><a href="#">Modules</a></li>
+                        <li><a href="#">Piazza</a></li>
+                        <li><a href="#">Zoom Meetings</a></li>
+                        <li><a href="/kanbas/assignments/index.html">Assignments</a></li>
+                        <li><a href="#">Quizzes</a></li>
+                        <li><a href="/kanbas/grades.html">Grades</a></li>
+                        <li><a href="#">People</a></li>
+                        <li><a href="#">Panopto Video</a></li>
+                        <li><a href="#">Discussions</a></li>
+                        <li><a href="#">Announcements</a></li>
+                        <li><a href="#">Pages</a></li>
+                        <li><a href="#">Files</a></li>
+                        <li><a href="#">Rubric</a></li>
+                        <li><a href="#">Outcomes</a></li>
+                        <li><a href="#">Collaborations</a></li>
+                        <li><a href="#">Syllabus</a></li>
+                        <li><a href="/kanbas/settings/course-details.html">Settings</a></li>
+                    </ul>
+                </td>
+                <td>
+                    <ul class="horizontal-list">
+                        <li><a href="/kanbas/settings/course-details.html">Course Details</a></li>
+                        <li><a href="#">Sections</a></li>
+                        <li><a href="/kanbas/settings/navigation.html">Navigation</a></li>
+                        <li><a href="#">Apps</a></li>
+                        <li><a href="#">Feature Options</a></li>
+                        <li><a href="#">Integrations</a></li>
+                    </ul>
+                    <h2>Course Details</h2>
+                    <table>
+                        <tbody>
+                            <tr>
+                                <td><label for="image">Image: </label></td>
+                                <td><input type="file" id="image"></td>
+                            </tr>
+                            <tr>
+                                <td><label for="name">Name: </label></td>
+                                <td><span id="name">CS4550 12631 Web Development SEC 01 Fall 2023 [BOS-1-TR]</span></td>
+                            </tr>
+                            <tr>
+                                <td><label for="course-code">Course Code: </label></td>
+                                <td><span id="course-code">CS4550.12631.202410</span></td>
+                            </tr>
+                            <tr>
+                                <td><label for="blueprint-course">Blueprint Course: </label></td>
+                                <td><span id="blueprint-course">No</span></td>
+                            </tr>
+                            <tr>
+                                <td><label for="chkbox-course-template">Course Template: </label></td>
+                                <td><input type="checkbox" id="chkbox-course-template">Enable course as a Course
+                                    Template</td>
+                            </tr>
+                            <tr>
+                                <td><label for="timezone">Time Zone: </label></td>
+                                <td><select id="timezone">
+                                        <option selected value="EST">Eastern Time (US & Canada) (-05:00/-04:00)</option>
+                                    </select></td>
+                            </tr>
+                            <tr>
+                                <td><label for="sis-id">SIS ID: </label></td>
+                                <td><span id="sis-id">CS4550.12631.202410</span></td>
+                            </tr>
+                            <tr>
+                                <td><label for="subaccount">Subaccount: </label></td>
+                                <td><span id="subaccount">CS Undergrad</span></td>
+                            </tr>
+                            <tr>
+                                <td><label for="term">Term: </label></td>
+                                <td><span id="term">202410_1 Fall 2023 Semester Full Term</span></td>
+                            </tr>
+                            <tr>
+                                <td><label for="participation">Participation: </label></td>
+                                <td>
+                                    <select id="participation">
+                                        <option selected value="term">Term</option>
+                                    </select><br>
+                                    <span>Course participation is limited to term start and end dates.</span><br>
+                                    <label for="start-date">Start</label>
+                                    <input type="date" value="" placeholder=""><br>
+                                    <label for="end-date">End</label>
+                                    <input type="date" value="" placeholder=""><br>
+                                    <input type="checkbox" id="chkbox-start-date-restriction">
+                                    <label for="chkbox-start-date-restriction">Restrict Students from viewing course
+                                        before term start date</label><br>
+                                    <input type="checkbox" id="chkbox-end-date-restriction">
+                                    <label for="chkbox-end-date-restriction">Restrict Students from viewing course
+                                        after term end date</label>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td><label for="default-due-time">Default due time: </label></td>
+                                <td>
+                                    <select id="default-due-time">
+                                        <option selected value="default">Account default (11:59pm)</option>
+                                    </select><br>
+                                    <span>This influences the user interfaces for setting due dates. It does not change
+                                        the time due for any existing assignments.</span>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td><label for="language">Language: </label></td>
+                                <td>
+                                    <select id="language">
+                                        <option selected value="default">Not set (user-configurable, deafults to
+                                            English)</option>
+                                    </select><br>
+                                    <span>This will override any yser/system language preferences. This is only
+                                        recommended for foreign language courses.</span>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td><label for="file-storage">File Storage: </label></td>
+                                <td><span id="file-storage">10000 megabytes</span></td>
+                            </tr>
+                            <tr>
+                                <td><label for="chkbox-large-course">Large Course: </label></td>
+                                <td><input type="checkbox" id="chkbox-large-course">Launch SpeedGrader Filtered by
+                                    Student Group</td>
+                            </tr>
+                            <tr>
+                                <td><label for="chkbox-grading-scheme">Grading Scheme: </label></td>
+                                <td><input type="checkbox" id="chkbox-grading-scheme">Enable course grading scheme</td>
+                            </tr>
+                            <tr>
+                                <td><label for="license">License: </label></td>
+                                <td>
+                                    <select id="license">
+                                        <option selected value="private">Private (Copyrighted)</option>
+                                    </select>Help<br>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td><label for="chkbox-file-copyright">File Copyright: </label></td>
+                                <td><input type="checkbox" id="chkbox-file-copyright">Copyright and license information
+                                    must be provided for files before they are published.</td>
+                            </tr>
+                            <tr>
+                                <td><label for="visibility">Visibility: </label></td>
+                                <!-- https://stackoverflow.com/questions/5805059/how-do-i-make-a-placeholder-for-a-select-box -->
+                                <td>
+                                    <span>If you need to make your course public please contact your
+                                        administrator/support.</span><br>
+                                    <select id="visibility">
+                                        <option value="" disabled selected>Course</option>
+                                    </select>Help<br>
+                                    <input type="checkbox" id="public-course-index">
+                                    <label for="public-course-index">Include this course in the public course
+                                        index</label>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td><label for="format">Format: </label></td>
+                                <td><select id="format">
+                                        <option selected value="on-campus">On-Campus</option>
+                                    </select></td>
+                            </tr>
+                            <tr>
+                                <td><label for="chkbox-mastery-paths">Mastery Paths: </label></td>
+                                <td><input type="checkbox" id="chkbox-mastery-paths">Enable individual learning paths
+                                    for students based on assessment</td>
+                            </tr>
+                            <tr>
+                                <td><label for="description">Description: </label></td>
+                                <td><textarea id="description" cols="30" rows="10"></textarea></td>
+                            </tr>
+                            <tr>
+                                <td></td>
+                                <td><a href="#">more options</a></td>
+                            </tr>
+                        </tbody>
+                        <!-- https://www.geeksforgeeks.org/html-tfoot-align-attribute/ -->
+                        <tfoot align="right">
+                            <tr>
+                                <td></td>
+                                <!-- https://stackoverflow.com/questions/2053925/can-a-tfoot-go-at-the-bottom-of-a-table#:~:text=The%20can%20show%20on,respectively%20%2D%20not%20in%20the%20table. -->
+                                <td><button>Update Course Details</button></td>
+                            </tr>
+                        </tfoot>
+                    </table>
+                </td>
+
+        </tbody>
+    </table>
+
+</body>
+
+</html>

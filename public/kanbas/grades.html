@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grades</title>
+    <style>
+        td {
+            vertical-align: top;
+        }
+    </style>
+</head>
+
+<body>
+    <table border="0" width="100%">
+        <tbody>
+            <tr>
+                <td>
+                    <ul>
+                        <li><a href="/kanbas/profile/index.html">Account</a></li>
+                        <li><a href="#">Dashboard</a></li>
+                        <li><a href="/kanbas/home.html">Courses</a></li>
+                        <li><a href="#">Calendar</a></li>
+                        <li><a href="#">Inbox</a></li>
+                        <li><a href="#">History</a></li>
+                        <li><a href="#">Studio</a></li>
+                        <li><a href="#">Commons</a></li>
+                        <li><a href="#">Help</a></li>
+                    </ul>
+                </td>
+                <td>
+                    <ul>
+                        <li><a href="/kanbas/home.html">Home</a></li>
+                        <li><a href="#">Modules</a></li>
+                        <li><a href="#">Piazza</a></li>
+                        <li><a href="#">Zoom Meetings</a></li>
+                        <li><a href="/kanbas/assignments/index.html">Assignments</a></li>
+                        <li><a href="#">Quizzes</a></li>
+                        <li><a href="/kanbas/grades.html">Grades</a></li>
+                        <li><a href="#">People</a></li>
+                        <li><a href="#">Panopto Video</a></li>
+                        <li><a href="#">Discussions</a></li>
+                        <li><a href="#">Announcements</a></li>
+                        <li><a href="#">Pages</a></li>
+                        <li><a href="#">Files</a></li>
+                        <li><a href="#">Rubric</a></li>
+                        <li><a href="#">Outcomes</a></li>
+                        <li><a href="#">Collaborations</a></li>
+                        <li><a href="#">Syllabus</a></li>
+                        <li><a href="/kanbas/settings/course-details.html">Settings</a></li>
+                    </ul>
+                </td>
+                <td>
+                    <div>
+                        <select id="select-one1">
+                            <!-- <option value="Gradebook">Gradebook</option> -->
+                            <option selected value="Gradebook">
+                                Gradebook</option>
+                        </select>
+                        <button type="button">Import</button>
+                        <select id="select-one2">
+                            <!-- <option value="Export">Export</option> -->
+                            <option selected value="Export">
+                                Export</option>
+                        </select>
+                        <button type="button">Configure</button>
+                    </div>
+
+                    <div>
+                        <form id="text-fields">
+                            <label for="text-fields-students">
+                                <h3>Student Names</h3>
+                            </label>
+                            <input id="text-fields-students" placeholder="Search Students" /><br />
+
+                            <label for="text-fields-assignments">
+                                <h3>Assignment Names</h3>
+                            </label>
+                            <input id="text-fields-assignments" placeholder="Search Assignments" /><br />
+                        </form>
+                    </div>
+
+                    <div><br><button type="button">Apply Filters</button></div>
+                    <br>
+
+                    <div>
+                        <table border="1" width="100%">
+                            <thead>
+                                <tr>
+                                    <th>Student Name</th>
+                                    <th>A1 SETUP Out of 100</th>
+                                    <th>A2 HTML Out of 100</th>
+                                    <th>A3 CSS of 100</th>
+                                    <th>A4 BOOTSTRAP Out of 100</th>
+                                    <th>A5 JAVASCRIPT Out of 100</th>
+                                    <th>A6 REACT Out of 100</th>
+                                    <th>A7 REDUX Out of 100</th>
+                                    <th>A8 NODE Out of 100</th>
+                                    <th>A9 MONGO Out of 100</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>Alice Wonderland</td>
+                                    <td>90</td>
+                                    <td>90</td>
+                                    <td><input type="number" id="grade" placeholder="100" value="100" min="0"
+                                            max="100" />
+                                    </td>
+                                    <td>100</td>
+                                    <td>50</td>
+                                    <td><input type="number" id="grade" placeholder="100" value="100" min="0"
+                                            max="100" />
+                                    </td>
+                                    <td>0</td>
+                                    <td>0</td>
+                                    <td>0</td>
+                                </tr>
+                                <tr>
+                                    <td>Anakin Skywalker</td>
+                                    <td>80</td>
+                                    <td>90</td>
+                                    <td>100</td>
+                                    <td><input type="number" id="grade" placeholder="100" value="100" min="0"
+                                            max="100" />
+                                    </td>
+                                    <td>20</td>
+                                    <td><input type="number" id="grade" placeholder="100" value="100" min="0"
+                                            max="100" />
+                                    </td>
+                                    <td>0</td>
+                                    <td>85</td>
+                                    <td>10</td>
+                                </tr>
+                                <tr>
+                                    <td>Bruce Wayne</td>
+                                    <td>100</td>
+                                    <td>100</td>
+                                    <td>100</td>
+                                    <td>100</td>
+                                    <td><input type="number" id="grade" placeholder="100" value="100" min="0"
+                                            max="100" />
+                                    </td>
+                                    <td>100</td>
+                                    <td><input type="number" id="grade" placeholder="100" value="100" min="0"
+                                            max="100" />
+                                    </td>
+                                    <td>100</td>
+                                    <td>100</td>
+                                </tr>
+                                <tr>
+                                    <td>Padme Amidala</td>
+                                    <td>99</td>
+                                    <td><input type="number" id="grade" placeholder="100" value="100" min="0"
+                                            max="100" />
+                                    </td>
+                                    <td>95</td>
+                                    <td>90</td>
+                                    <td>100</td>
+                                    <td>100</td>
+                                    <td><input type="number" id="grade" placeholder="100" value="100" min="0"
+                                            max="100" />
+                                    </td>
+                                    <td>90</td>
+                                    <td>92</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </td>
+
+        </tbody>
+    </table>
+
+</body>
+
+</html>
